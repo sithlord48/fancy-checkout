@@ -1,0 +1,14 @@
+{
+  "name": "fancy-checkout",
+  "version": "1.0.0",
+  "description": "Checkout a repo with all the tags in one step",
+  "main": "action.yml",
+  "keywords": [],
+  "author": "sithlord48",
+  "license": "MIT",
+  "dependencies": {
+    "@actions/core": "^1.10.0",
+    "@actions/checkout": "^4",
+  },
+  "type": "composite"
+}
