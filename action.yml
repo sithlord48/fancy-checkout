@@ -13,12 +13,8 @@ runs:
 
   steps:
     - name: Checkout
-      uses: actions/checkout@v5
+      uses: actions/checkout@v6
       with:
         fetch-depth: 0
-
-    - name: Fetch tags
-      run: |
-        git config --global --add safe.directory $GITHUB_WORKSPACE
-        git fetch --tags --force
-      shell: bash
+        fetch-tags: true
+        set-safe-directory: true
